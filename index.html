@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Добро пожаловать</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #e0f7fa;
-      color: #333;
-      padding: 50px;
-      text-align: center;
-    }
-    h1 { color: #00796b; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Привет, мир!</h1>
-  <p>Это мой первый сайт на GitHub Pages 🎉</p>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Заголовок -->
+    <header class="bg-blue-600 text-white p-6 text-center">
+        <h1 class="text-4xl font-bold">Привет, я [Твоё имя]!</h1>
+        <p class="mt-2 text-lg">Это мой личный сайт. Добро пожаловать!</p>
+    </header>
+
+    <!-- Раздел "О себе" -->
+    <section class="max-w-4xl mx-auto p-6 mt-8 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold text-center">О себе</h2>
+        <p class="mt-4 text-lg text-center">
+            Я занимаюсь [вставь свою профессию/хобби]. Здесь ты можешь узнать больше обо мне и связаться.
+        </p>
+    </section>
+
+    <!-- Раздел "Связь" -->
+    <section class="max-w-4xl mx-auto p-6 mt-8 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold text-center">Связаться со мной</h2>
+        <form action="https://formspree.io/f/yourcode" method="POST" class="mt-4">
+            <div class="flex flex-col space-y-4">
+                <input type="text" name="name" placeholder="Ваше имя" class="p-4 border rounded" required>
+                <input type="email" name="email" placeholder="Ваш email" class="p-4 border rounded" required>
+                <textarea name="message" placeholder="Сообщение" class="p-4 border rounded" required></textarea>
+                <button type="submit" class="bg-blue-600 text-white p-4 rounded hover:bg-blue-700 transition duration-300">Отправить сообщение</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Раздел "Социальные сети" -->
+    <section class="max-w-4xl mx-auto p-6 mt-8 text-center">
+        <h2 class="text-2xl font-semibold">Социальные сети</h2>
+        <div class="mt-4 space-x-4">
+            <a href="https://facebook.com" target="_blank" class="text-blue-600 hover:text-blue-800">Facebook</a>
+            <a href="https://twitter.com" target="_blank" class="text-blue-600 hover:text-blue-800">Twitter</a>
+            <a href="https://linkedin.com" target="_blank" class="text-blue-600 hover:text-blue-800">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+        <p>&copy; 2025, Все права защищены</p>
+    </footer>
+
 </body>
+
 </html>
